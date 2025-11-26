@@ -1,0 +1,8 @@
+streamlit
+streamlit-webrtc
+keras-facenet
+mtcnn
+scikit-learn
+opencv-python-headless
+numpy
+Pillow
