@@ -11,8 +11,8 @@ import pickle
 embedder = FaceNet()
 detector = MTCNN()
 
-clf = pickle.load(open("models/svm_model.pkl", "rb"))
-encoder = pickle.load(open("models/label_encoder.pkl", "rb"))
+clf = pickle.load(open("svm_model.pkl", "rb"))
+encoder = pickle.load(open("label_encoder.pkl", "rb"))
 
 # Extract face
 def extract_face(frame):
@@ -54,3 +54,4 @@ st.title("Real-Time Face Recognition")
 st.write("Webcam live detection using FaceNet + SVM")
 
 webrtc_streamer(key="face-recognition", video_transformer_factory=FaceRecognition)
+
