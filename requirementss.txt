@@ -3,8 +3,7 @@ streamlit-webrtc
 keras-facenet
 mtcnn
 scikit-learn
-opencv-python-headless
+opencv-python-headless==4.5.1.48
 numpy
-cv2
-av
 Pillow
+
